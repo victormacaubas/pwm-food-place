@@ -308,9 +308,73 @@ section.services {
 
 /* =========== Sobre =========== */
 
+section.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .about .image img {
+    width: 100%;
+  }
+  
+  .about .content h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about .content p {
+    color: var(--grey);
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  
+
 /* =========== App =========== */
 
+section.app {
+    margin: 10rem 9%;
+    border-radius: 0.5rem;
+    background-color: var(--yellow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    padding: 22rem 0;
+  }
+  
+  section.app .image {
+    position: absolute;
+    left: 15%;
+  }
+  
+  section.app .image img {
+    width: 100%;
+  }
+  
+  section.app .content {
+    position: absolute;
+    right: 5%;
+    width: 45%;
+  }
+  
+  section.app .content h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  
+  section.app .content p {
+    margin-bottom: 3rem;
+  }
+  
+  section.app .content .links img {
+    margin-right: 3rem;
+  }
+
 /* =========== Rodapé =========== */
+
+
 
 /* =========== Pré Carregamento =========== */
 
