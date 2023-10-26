@@ -25,5 +25,32 @@ Array.from(scrollLink).map((link) => {
 /* =========== Rodagem suave =========== */
 
 /* =========== Pre-carregamento =========== */
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 2000);
+});
+
 
 /* =========== Rodagem superior =========== */
+const scrollTop = document.querySelector(".scroll-top");
+
+scrollTop.addEventListener("click", () => {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", (e) => {
+  const scrollHeight = window.scrollY;
+
+  if (scrollHeight > 300) {
+    scrollTop.classList.add("show");
+  } else {
+    scrollTop.classList.remove("show");
+  }
+});
