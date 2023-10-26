@@ -1,5 +1,5 @@
-# pwm-pizza-place
-Pizza place website where customers can place orders
+# pwm-food-place
+Food Ordering website where customers can place orders
 
 # Team Members:
 - Eduarda Gomes
