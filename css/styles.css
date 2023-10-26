@@ -118,19 +118,53 @@ section {
 }
 
 /* Para fazer a nav bar responsiva, precisamos fazer o menu hamburger visivel em aparelhos menores usando media queries */
-@media (max-width: 996px) {
+@media (max-width: 768px) {
     .logo {
-      font-size: 3rem;
+        font-size: 3rem;
     }
-  
+
     .navbar a {
-      padding: 0.5rem;
+        padding: 0.5rem;
     }
-  
+
     .navbar a:not(:last-child) {
-      margin-right: 0.5rem;
+        margin-right: 0.5rem;
     }
-  }
+
+    .header .navbar {
+        position: fixed;
+        /* top: 9rem; */
+        left: 0;
+        right: 0;
+        width: 90%;
+        padding: 2.5rem;
+        margin: 0 auto;
+        box-shadow: var(--box-shadow);
+        background-color: var(--white);
+        text-align: center;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+        top: -100%;
+    }
+
+    .header .navbar a:last-child {
+        display: none;
+    }
+
+    .header .hamburger {
+        display: block;
+    }
+
+    .navbar.show {
+        top: 9rem;
+    }
+
+    
+
+}
+
 /* =========== Home =========== */
 
 /* =========== Serviços =========== */
