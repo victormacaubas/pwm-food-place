@@ -38,6 +38,13 @@ body {
     color: var(--black);
 }
 
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -263,12 +270,6 @@ section.services {
     gap: 3rem;
 }
 
-.services .bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 3rem;
-}
-
 .services .bottom .box {
     display: flex;
     flex-direction: column;
@@ -305,6 +306,70 @@ section.services {
     height: 1rem;
 }
 
+/* =========== Pedido =========== */
+section.order {
+  background-color: var(--bg-yellow);
+  padding: 5rem 9%;
+}
+
+.order .top {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.order .top h2 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.order .top p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--grey);
+}
+
+.order .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+.order .bottom .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.order .bottom .box:hover {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.order .bottom .box img {
+  height: 6rem;
+}
+
+.order .bottom .box h4 {
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
+}
+
+.order .bottom .box p {
+  color: var(--grey);
+  margin-bottom: 1.5rem;
+}
+
+.order .bottom .box a {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.order .bottom .box a img {
+  height: 1rem;
+}
 
 /* =========== Sobre =========== */
 

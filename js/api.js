@@ -16,7 +16,7 @@ async function createParseOrder() {
       if (order !== null) {
         // Notify the success by getting the attributes from the "User" object, by using the get method (the id attribute needs to be accessed directly, though)
         alert(
-          `New object created with success! ObjectId: ${
+          `Pedido cadastrado com sucesso! ID do pedido: ${
             order.id
           }, ${order.get("Username")}`
         );
