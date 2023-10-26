@@ -199,12 +199,12 @@ section {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
     transition: var(--transition);
-  }
-  
-  .home .content .home-btn:hover {
+}
+
+.home .content .home-btn:hover {
     transform: translateY(-3px);
     box-shadow: var(--box-shadow);
-  }
+}
 
 /* =========== Serviços =========== */
 
