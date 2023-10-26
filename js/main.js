@@ -25,5 +25,13 @@ Array.from(scrollLink).map((link) => {
 /* =========== Rodagem suave =========== */
 
 /* =========== Pre-carregamento =========== */
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 2000);
+});
+
 
 /* =========== Rodagem superior =========== */
