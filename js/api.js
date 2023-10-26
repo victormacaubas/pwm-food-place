@@ -1,22 +1,24 @@
 Parse.initialize("JPHlNr3TE3RIPYYy111ibk4WIgQt5a2njYDXq4lY", "gjxIE1a0J2JLvxWnbcT3q3IOqOoOxCmCkrsBfloI");
 Parse.serverURL = "https://parseapi.back4app.com/";
 
-async function createParseUser() {
+async function createParseOrder() {
     // Creates a new Parse "User" object, which is created by default in your Parse app
-    let user = new Parse.User();
+    let order = new Parse.Object("Order");
     // Set the input values to the new "User" object
-    user.set("username", document.getElementById("username").value);
-    user.set("email", document.getElementById("email").value);
-    user.set("password", document.getElementById("password").value);
+    order.set("Massa", document.getElementById("Massa").value);
+    order.set("Tamanho", document.getElementById("Tamanho").value);
+    order.set("Sabor", document.getElementById("Sabor").value);
+    order.set("Username", document.getElementById("Username").value);
+
     try {
       // Call the save method, which returns the saved object if successful
-      user = await user.save();
-      if (user !== null) {
+      order = await order.save();
+      if (order !== null) {
         // Notify the success by getting the attributes from the "User" object, by using the get method (the id attribute needs to be accessed directly, though)
         alert(
           `New object created with success! ObjectId: ${
-            user.id
-          }, ${user.get("username")}`
+            order.id
+          }, ${order.get("Username")}`
         );
       }
     } catch (error) {
@@ -26,5 +28,5 @@ async function createParseUser() {
   
   // Add on click listener to call the create parse user function
   document.getElementById("createButton").addEventListener("click", async function () {
-    createParseUser();
+    createParseOrder();
   });
