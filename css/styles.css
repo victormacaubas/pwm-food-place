@@ -118,7 +118,7 @@ section {
 }
 
 /* Para fazer a nav bar responsiva, precisamos fazer o menu hamburger visivel em aparelhos menores usando media queries */
-@media (max-width: 768px) {
+@media (max-width: 996px) {
     .logo {
         font-size: 3rem;
     }
@@ -130,6 +130,9 @@ section {
     .navbar a:not(:last-child) {
         margin-right: 0.5rem;
     }
+}
+
+@media (max-width: 768px) {
 
     .header .navbar {
         position: fixed;
@@ -160,8 +163,6 @@ section {
     .navbar.show {
         top: 9rem;
     }
-
-
 
 }
 
