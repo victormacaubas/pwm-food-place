@@ -117,8 +117,20 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-
-
+/* Para fazer a nav bar responsiva, precisamos fazer o menu hamburger visivel em aparelhos menores usando media queries */
+@media (max-width: 996px) {
+    .logo {
+      font-size: 3rem;
+    }
+  
+    .navbar a {
+      padding: 0.5rem;
+    }
+  
+    .navbar a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
 /* =========== Home =========== */
 
 /* =========== Serviços =========== */
