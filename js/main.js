@@ -20,10 +20,6 @@ Array.from(scrollLink).map((link) => {
   });
 });
 
-/* =========== Posição de rodagem =========== */
-
-/* =========== Rodagem suave =========== */
-
 /* =========== Pre-carregamento =========== */
 const preloader = document.querySelector(".preloader");
 
